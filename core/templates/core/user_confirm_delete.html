@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">
+            <h2>آیا مطمئن هستید که می‌خواهید {{ user_profile.username }} را حذف کنید؟</h2>
+        </h3>
+        <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse" title="Collapse">
+                <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
+                <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-lte-toggle="card-remove" title="Remove">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn btn-danger" type="submit">بله، حذف شود</button>
+            <a class="text-success m-2" href="{% url 'user_list' %}">انصراف</a>
+          </form>
+    </div>
+
+</div>
+{% endblock %}

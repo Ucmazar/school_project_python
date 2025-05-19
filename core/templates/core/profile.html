@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="col-12 col-sm-6 col-md-6">
+    <div class="info-box">
+      <span class="info-box-icon text-bg-warning shadow-sm">
+        <i class="bi bi-people-fill"></i>
+      </span>
+      <div class="info-box-content">
+        <span class="info-box-text">نام کاربری:{{user_profile.username}}</span>
+        <span class="info-box-text">نام و تخلص: {{user_profile.first_name}}</span>
+        <span class="info-box-text">ایمیل آدرس: {{user_profile.email}}</span>
+        <span class="info-box-text">شماره تماس: {{user_profile.phone}}</span>
+        <span class="info-box-text">آدرس: {{user_profile.address}}</span>
+        <span class="info-box-number">تاریخ ثبت نام: {{ user_profile.date_joined }}</span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+
+  {% endblock content %}

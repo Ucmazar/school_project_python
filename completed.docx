@@ -1,0 +1,36 @@
+✅ لیست کارهای انجامشده تا این لحظه
+1. راهاندازی اولیه پروژه Django
+•	• ساخت محیط مجازی: python -m venv .venv
+•	• فعالسازی: .venv\Scripts\activate
+•	• نصب Django: pip install django
+•	• ایجاد پروژه: django-admin startproject config .
+2. ساختار حرفهای پروژه بزرگ
+•	• انتخاب ساختار پروژه با اپهای جداگانه برای هر بخش
+•	• core/ → مدلهای پایه مثل UserProfile
+•	• accounts/ → ثبتنام و ورود کاربران
+•	• students/, teachers/, grades/, attendance/, ...
+3. ساخت اپ core
+•	• ساخت اپ با دستور: python manage.py startapp core
+•	• تعریف مدل اولیه UserProfile
+•	• اضافه کردن به settings.py
+4. تست مدلها و تعریف __str__
+•	• تست اولیه مدلها با اجرای makemigrations و migrate
+•	• تعریف __str__ برای نمایش بهتر در ادمین و پنلها
+5. راهاندازی Git و اتصال به GitHub
+•	• نصب و راهاندازی Git در ویندوز 7
+•	• اجرای: git init, git add ., git commit -m
+•	• اتصال به GitHub: git remote add origin ...
+•	• push کردن: git push origin main
+6. ساختار قالبها (Templates)
+•	• ایجاد پوشه templates/ سراسری
+•	• تعریف پوشهی templates داخل هر اپ
+•	• ساخت فایل base.html برای قالب پایه
+•	• استفاده از {% block %} و {% include %}
+7. اضافهکردن فونت فارسی لوکال
+•	• قرار دادن فونت داخل static/core/fonts/
+•	• بارگذاری فونت با @font-face در base.html
+•	• استفاده از font-family: 'Vazir'
+8. آمادهسازی برای نمایش کاربران
+•	• ساخت ویو برای لیست کاربران
+•	• افزودن آدرس در urls.py
+•	• آمادهسازی قالب HTML

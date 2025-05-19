@@ -1,0 +1,20 @@
+# فایل محیط مجازی
+.venv/
+
+# فایل‌های pycache
+__pycache__/
+*.pyc
+
+# فایل‌های تنظیمات محلی
+*.sqlite3
+db.sqlite3
+
+# فایل‌های مایگریشن (اختیاری)
+*/migrations/*.pyc
+*/migrations/*.py
+
+# پوشه static ساخته شده (اگر از collectstatic استفاده کنی)
+staticfiles/
+
+# پوشه media (اختیاری)
+media/

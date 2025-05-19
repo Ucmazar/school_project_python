@@ -46,10 +46,10 @@
                     <td>{{ user.email }}</td>
                     <td><span class="">{{ user.phone }}</span></td>
                     <td>
-                        <a href="{% url 'user_update' user.pk %}" class="px-2" title="ویرایش">
+                        <a href="{% url 'user_profile_edit' user.username %}" class="px-2" title="ویرایش">
                             <i class="fas fa-edit"></i>
                         </a>
-                        <a href="{% url 'user_delete' user.pk %}" class="px-2" title="حذف">
+                        <a href="{% url 'user_profile_delete' user.username %}" class="px-2" title="حذف">
                             <i class="fas fa-trash-alt"></i>
                         </a>
 
